@@ -13,8 +13,7 @@ export function activate(context: vscode.ExtensionContext) {
 		indentationRules: {
 			increaseIndentPattern: /^\s*(else|elseif|for|(local\s+)?function|if|repeat|until|while)\b((?!end).)*$|.*\{\s*$/,
 			decreaseIndentPattern: /^\s*(else|end|\})\s*$|^\s*elseif\b((?!end).)*$/
-		},
-		wordPattern: /(-?\d+(?:\.\d+))|(:?[A-Za-z][^-`~@#%^&()=+[{}|;:'",<>/.*\]\s\\!?]*[!?]?)/
+		}
 	});
     context.subscriptions.push(new VersionSelector());
 }
